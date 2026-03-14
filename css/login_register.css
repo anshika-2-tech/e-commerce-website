@@ -1,0 +1,86 @@
+
+body{    font-family: Figtree-Regular, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 13px;
+    line-height: 1.42857143;
+    color: #424553;
+
+
+}
+
+    main{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    background:#fdebe7;
+    height: 90vh;
+    
+
+
+}
+.login-box{
+    display: grid;
+    border: 1px solid black;
+    height: 60vh;
+    border-radius:3px ;
+    padding: 36px 36px 0;
+    width: 400px;
+    background: white
+    
+}
+.login{
+    margin-bottom: 24px;
+    font-family: Figtree-Regular;
+    font-size: 20px;
+    font-weight: 700;
+
+}
+.x{
+    font-size: 16px;
+    font-weight: 400;
+    color: #535766;
+
+}
+.mobileinput{
+    position: relative;
+    display: flex;
+    align-items: center;
+    border: 1px solid #d4d5d9;
+    padding: 10px;
+    margin-bottom:24px ;
+}
+.code{
+    margin-right: 10px;
+    color: #535766;
+}
+.no{
+     border:none;
+    outline:none;
+    font-size:14px;
+    width:100%;
+}
+
+.consentbox{
+    margin: 5px 5px;
+    display: flex;
+
+}
+.privacy{
+    padding-left: 12px;
+    color: rgba(40, 44, 63, .8);
+    font-size: 14px;
+    font-weight: 400px;
+}
+.btn{
+    width:100%;
+    padding:12px;
+    margin-top:20px;
+    background:#ff3f6c;
+    color:white;
+    border:none;
+    font-weight:bold;
+    margin-bottom: 24px;
+
+}
+.help{
+    margin-bottom: 24px;
+}
