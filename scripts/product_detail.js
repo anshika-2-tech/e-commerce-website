@@ -1,8 +1,8 @@
-
 displayProductDetail();
 
-let wishItem=[];
-addToWish();
+let wishItem = JSON.parse(localStorage.getItem("wishItem")) || [];
+
+
 function goToProductDetail(id){
     localStorage.setItem("selectedItemId",id);
     window.location.href = "/pages/product_detail.html";
@@ -12,10 +12,17 @@ function goToProductDetail(id){
 function displayProductDetail(){
 
     let productContainer = document.querySelector(".product-details");
+    if(!productContainer){
+      console.log("product-details container not found");
+     return;}
 
     let itemId = localStorage.getItem("selectedItemId");
 
     let item = items.find(item => item.id == itemId);
+    if(!item){
+        productContainer.innerHTML="<h2> Product Not Found</h2>";
+        return;
+    }
 
     let innerHTML = `
     <div class="product-image">
@@ -123,11 +130,19 @@ function selectSize(button){
   button.classList.add("selected");
 
 }
+
  function addToWish(itemId){
+    
+    if(wishItem.includes(itemId)){
+        alert("Item already present in Wishlist ❤️");
+        return;
+    }
+    
     wishItem.push(itemId);
     localStorage.setItem('wishItem', JSON.stringify(wishItem));
-    
+    alert("Item added to Wishlist");
 
 }
+console.log(wishItem);
 
 

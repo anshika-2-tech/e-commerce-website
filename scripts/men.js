@@ -2,7 +2,7 @@
 
 displaymenitems();
 
-displayProductDetail();
+
 
 function displaymenitems(){
     let menitemsContainerElement = document.querySelector('.men-container');
