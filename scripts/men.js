@@ -1,14 +1,18 @@
 
 
-displaymenitems();
+displaymenitems(items);
+
+<<<<<<< HEAD:scripts/men.js
+
+=======
+>>>>>>> af282a4 (new updates):myntra function clone/scripts/men.js
 
 
-
-function displaymenitems(){
+function displaymenitems(data){
     let menitemsContainerElement = document.querySelector('.men-container');
     let innerHTML = '';
 
-    items.forEach(item => {
+    data.forEach(item => {
        if (item.category==='boys'){
 
     innerHTML += `
@@ -33,4 +37,21 @@ function displaymenitems(){
     `;
 }}); 
 menitemsContainerElement.innerHTML=innerHTML;          
+}
+function sortLowToHigh(){
+    let sortedItems=[...items];
+    sortedItems.sort((a,b) => a.current_price-b.current_price);
+    displaymenitems(sortedItems);
+    console.log("clicked");
+}
+function sortHighToLow(){
+      let sortedItems=[...items];
+      sortedItems.sort((a,b) => b.current_price-a.current_price);
+      displaymenitems(sortedItems);
+}
+function sortRating(){
+     let sortedItems=[...items];
+      sortedItems.sort((a,b) => a.rating.stars-b.rating.stars);
+      displaymenitems(sortedItems);
+         
 }

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Signup</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+  font-family: Arial;
+  background: #f2f2f2;
+}
+
+.container {
+  width: 300px;
+  margin: 100px auto;
+  padding: 20px;
+  background: white;
+  text-align: center;
+  border-radius: 10px;
+}
+
+input {
+  width: 90%;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+button {
+  padding: 10px;
+  width: 100%;
+  background: blue;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background: darkblue;
+}
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <h2>Signup</h2>
+  
+  <input type="text" id="name" placeholder="Enter Name">
+  <input type="tel" id="name" placeholder="Enter Phone Number">
+  <input type="email" id="email" placeholder="Enter Email">
+  <input type="password" id="password" placeholder="Enter Password">
+  
+  <button onclick="signupUser()">Sign Up</button>
+
+  <p>Already have account? <a href="login.html">Login</a></p>
+</div>
+
+<script src="signup.js"></script>
+
+</body>
+</html>

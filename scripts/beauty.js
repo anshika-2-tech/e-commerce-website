@@ -1,4 +1,5 @@
 
+<<<<<<< HEAD:scripts/beauty.js
 displaybeautyitems();
 
 function displaybeautyitems(){
@@ -6,6 +7,15 @@ function displaybeautyitems(){
     let innerHTML = '';
 
     items.forEach(item => {
+=======
+displaybeautyitems(items);
+
+function displaybeautyitems(data){
+    let beautyitemsContainerElement = document.querySelector('.beauty-container');
+    let innerHTML = '';
+
+    data.forEach(item => {
+>>>>>>> af282a4 (new updates):myntra function clone/scripts/beauty.js
        if (item.category=== 'beauty'){
 
     innerHTML += `
@@ -29,4 +39,21 @@ function displaybeautyitems(){
     `;
 }}); 
 beautyitemsContainerElement.innerHTML=innerHTML;          
+}
+function sortLowToHigh(){
+    let sortedItems=[...items];
+    sortedItems.sort((a,b) => a.current_price-b.current_price);
+    displaybeautyitems(sortedItems);
+    console.log("clicked");
+}
+function sortHighToLow(){
+      let sortedItems=[...items];
+      sortedItems.sort((a,b) => b.current_price-a.current_price);
+      displaybeautyitems(sortedItems);
+}
+function sortRating(){
+     let sortedItems=[...items];
+      sortedItems.sort((a,b) => a.rating.stars-b.rating.stars);
+      displaybeautyitems(sortedItems);
+         
 }

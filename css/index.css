@@ -464,5 +464,15 @@ a.action_container:link {
      border-radius: 10px;
      cursor: pointer;
 }
+<<<<<<< HEAD:css/index.css
+=======
+.filter_container {
+    position: relative;
+    margin: 15px 15px 15px 15px;
+    z-index: 1000;
+}
+
+
+>>>>>>> af282a4 (new updates):myntra function clone/css/index.css
 
 

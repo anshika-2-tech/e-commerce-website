@@ -1,10 +1,10 @@
 
-displaymenitems();
-function displaymenitems(){
+displaykidsitems(items);
+function displaykidsitems(data){
     let kiditemsContainerElement = document.querySelector('.kid-container');
     let innerHTML = '';
 
-    items.forEach(item => {
+    data.forEach(item => {
        if (item.category==='kids'){
 
     innerHTML += `
@@ -28,4 +28,21 @@ function displaymenitems(){
     `;
 }}); 
 kiditemsContainerElement.innerHTML=innerHTML;          
+}
+function sortLowToHigh(){
+    let sortedItems=[...items];
+    sortedItems.sort((a,b) => a.current_price-b.current_price);
+    displaykidsitems(sortedItems);
+    console.log("clicked");
+}
+function sortHighToLow(){
+      let sortedItems=[...items];
+      sortedItems.sort((a,b) => b.current_price-a.current_price);
+      displaykidsitems(sortedItems);
+}
+function sortRating(){
+     let sortedItems=[...items];
+      sortedItems.sort((a,b) => a.rating.stars-b.rating.stars);
+      displaykidsitems(sortedItems);
+         
 }

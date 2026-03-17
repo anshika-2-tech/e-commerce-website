@@ -1,10 +1,10 @@
 
-displaymenitems();
-function displaymenitems(){
+displayhomeitems(items);
+function displayhomeitems(data){
     let homeliitemsContainerElement = document.querySelector('.home-container');
     let innerHTML = '';
 
-    items.forEach(item => {
+    data.forEach(item => {
        if (item.category==='home_living'){
 
     innerHTML += `
@@ -28,4 +28,21 @@ function displaymenitems(){
     `;
 }}); 
 homeliitemsContainerElement.innerHTML=innerHTML;          
+}
+function sortLowToHigh(){
+    let sortedItems=[...items];
+    sortedItems.sort((a,b) => a.current_price-b.current_price);
+    displayhomeitems(sortedItems);
+    console.log("clicked");
+}
+function sortHighToLow(){
+      let sortedItems=[...items];
+      sortedItems.sort((a,b) => b.current_price-a.current_price);
+      displayhomeitems(sortedItems);
+}
+function sortRating(){
+     let sortedItems=[...items];
+      sortedItems.sort((a,b) => a.rating.stars-b.rating.stars);
+      displayhomeitems(sortedItems);
+         
 }

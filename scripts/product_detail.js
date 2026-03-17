@@ -5,7 +5,11 @@ let wishItem = JSON.parse(localStorage.getItem("wishItem")) || [];
 
 function goToProductDetail(id){
     localStorage.setItem("selectedItemId",id);
+<<<<<<< HEAD:scripts/product_detail.js
     window.location.href = "pages/product_detail.html";
+=======
+    window.location.href = "/pages/product_detail.html";
+>>>>>>> af282a4 (new updates):myntra function clone/scripts/product_detail.js
 
 }
 
@@ -13,7 +17,11 @@ function displayProductDetail(){
 
     let productContainer = document.querySelector(".product-details");
     if(!productContainer){
+<<<<<<< HEAD:scripts/product_detail.js
       console.log("product-details container not found");
+=======
+      
+>>>>>>> af282a4 (new updates):myntra function clone/scripts/product_detail.js
      return;}
 
     let itemId = localStorage.getItem("selectedItemId");
