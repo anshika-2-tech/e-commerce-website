@@ -65,3 +65,8 @@ function displayBagIcon(){
         bagItemCountElement.style.visibility = 'hidden';
     }
 }
+function logoutUser() {
+    localStorage.removeItem("user");
+    alert("Logged out!");
+    window.location.href = "index.html";
+}

@@ -42,7 +42,7 @@ function generateItemHTML(item){
                         <span class="discount">(${item.discount_percentage}% OFF)</span>
                     </div>
                      
-                          <button class="btn-add-bag" onclick="addToBag('${item.id}')" >Add To Bag</button>
+                          <button class="btn-add-bag" onclick="addToBag('${item.id}'), removeFromWish('${item.id}')" >Add To Bag</button>
                           <button class="btn-remove-wish" onclick="removeFromWish('${item.id}')">Remove From Wishlist</button>
                      
                 </div>`;}

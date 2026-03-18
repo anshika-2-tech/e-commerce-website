@@ -2,10 +2,6 @@
 
 displaymenitems(items);
 
-<<<<<<< HEAD:scripts/men.js
-
-=======
->>>>>>> af282a4 (new updates):myntra function clone/scripts/men.js
 
 
 function displaymenitems(data){

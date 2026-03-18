@@ -1,13 +1,5 @@
 
-<<<<<<< HEAD:scripts/beauty.js
-displaybeautyitems();
 
-function displaybeautyitems(){
-    let beautyitemsContainerElement = document.querySelector('.beauty-container');
-    let innerHTML = '';
-
-    items.forEach(item => {
-=======
 displaybeautyitems(items);
 
 function displaybeautyitems(data){
@@ -15,7 +7,7 @@ function displaybeautyitems(data){
     let innerHTML = '';
 
     data.forEach(item => {
->>>>>>> af282a4 (new updates):myntra function clone/scripts/beauty.js
+ 
        if (item.category=== 'beauty'){
 
     innerHTML += `

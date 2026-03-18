@@ -11,7 +11,7 @@
 <body>
      <header>
          <div class="logo_container">
-            <a href="../index.html"><img class="myntra_home" src="../images/myntra_logo.webp" alt="Myntra Home"></a>
+            <a href="../dashboard.html"><img class="myntra_home" src="../images/myntra_logo.webp" alt="Myntra Home"></a>
         </div>
         <nav class="nav_bar">
             <a href="mens.html">Men</a>
@@ -26,11 +26,15 @@
             <input class="search_input" placeholder="Search for products, brands and more">
         </div>
         <div class="action_bar">
-            <a class="action_container" href="../pages/login_register.html">
+           <div class="action_container" >
                 <span class="material-symbols-outlined action_icon">person</span>
-                <span class="action_name">Profile</span>
-             </a>   
-            
+                <span class="action_name" style="cursor: pointer;">Profile</span>
+
+        
+                 <div  class="dropdown">
+                 <p onclick="logoutUser()">Logout</p>
+                 </div>
+            </div>
 
             <a href="wishlist.html" class="action_container">
                 <span class="material-symbols-outlined action_icon">favorite</span>
@@ -61,8 +65,10 @@
     </div>
     </main>
     <script src="../data/item.js"></script>
+   
     <script src="../scripts/women.js"></script>
     <script src="../scripts/product_detail.js"></script>
+    <script src="../scripts/index.js"></script>
     
     
 </body>

@@ -1,18 +1,17 @@
-
+/* 
 body{    font-family: Figtree-Regular, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-    font-size: 13px;
-    line-height: 1.42857143;
+  
     color: #424553;
 
 
-}
+} */
 
     main{
     display: flex;
     justify-content:center;
     align-items: center;
     background:#fdebe7;
-    height: 90vh;
+    height: 100vh;
     
 
 
