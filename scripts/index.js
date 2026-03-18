@@ -49,6 +49,10 @@ itemsContainerElement.innerHTML = innerHTML;
 
 }
 function addToBag(itemId){
+     if(bagItem.includes(itemId)){
+        alert("Item already present in Bag ❤️");
+        return;
+    }
     
     bagItem.push(itemId);
     localStorage.setItem('bagItem', JSON.stringify(bagItem));
