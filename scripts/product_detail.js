@@ -6,7 +6,11 @@ let wishItem = JSON.parse(localStorage.getItem("wishItem")) || [];
 function goToProductDetail(id){
     localStorage.setItem("selectedItemId",id);
 
-    window.location.href = "pages/product_detail.html";
+     if(window.location.pathname.includes("/pages/")){
+        window.location.href = "product_detail.html";
+    } else {
+        window.location.href = "pages/product_detail.html";
+    }
 
 
 }
