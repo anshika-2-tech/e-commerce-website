@@ -50,12 +50,9 @@ itemsContainerElement.innerHTML = innerHTML;
 
 }
 function addToBag(itemId){
-<<<<<<< HEAD
-     
-    if(bagItem.includes(itemId)){
-=======
+
      if(bagItem.includes(itemId)){
->>>>>>> 0d8e3a85c7e7fc5447390a8103fb00d271bbc709
+
         alert("Item already present in Bag ❤️");
         return;
     }
@@ -78,13 +75,11 @@ function displayBagIcon(){
 function logoutUser() {
     localStorage.removeItem("user");
     alert("Logged out!");
-<<<<<<< HEAD
-    window.location.href = "/index.html";
-=======
+
       if(window.location.pathname.includes("/pages/")){
     window.location.href = "../index.html";
   } else {
     window.location.href = "index.html";
   }
->>>>>>> 0d8e3a85c7e7fc5447390a8103fb00d271bbc709
+
 }
