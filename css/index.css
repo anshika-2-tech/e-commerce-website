@@ -344,9 +344,7 @@ a.action_container:link {
 }
 
 
-/**************** RESPONSIVE CSS ****************/
 
-/* Tablet */
 @media (max-width: 1024px) {
     .item-container {
         width: 45%;
@@ -356,7 +354,6 @@ a.action_container:link {
     }
 }
 
-/* Mobile */
 @media (max-width: 768px) {
 
     body{
@@ -403,7 +400,7 @@ a.action_container:link {
     }
 }
 
-/* Small Mobile */
+
 @media (max-width: 480px) {
 
     .nav_bar a {
