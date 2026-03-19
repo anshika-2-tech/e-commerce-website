@@ -7,11 +7,12 @@
   color: #282c3f;
   font-size: 13px;
   line-height: 1.42857143;
+  border-radius: 5px;
 }
 
 .bag-page {
-  width: 75%;
-  margin-left: 12.5%;
+  width: 90%;
+  margin: 0 auto;
 }
 
 .bag-summary {
@@ -32,14 +33,14 @@
   font-size: 12px;
   font-weight: 700;
   margin: 24px 0 16px;
-  color: #535766;
+  color: antiquewhite;
 }
 
 .price-item {
   margin-bottom: 12px;
   line-height: 16px;
   font-size: 14px;
-  color: #282c3f;
+  color: antiquewhite;
 }
 
 .price-item-value {
@@ -47,7 +48,7 @@
 }
 
 .priceDetail-base-discount {
-  color: #03a685;
+  color: antiquewhite;
 }
 
 .price-footer {
@@ -55,7 +56,7 @@
   font-size: 15px;
   padding-top: 16px;
   border-top: 1px solid #eaeaec;
-  color: #3e4152;
+  color:antiquewhite;
   line-height: 16px;
 }
 
@@ -64,17 +65,17 @@
   letter-spacing: 1px;
   font-size: 14px;
   font-weight: 600;
-  border-radius: 2px;
+  border-radius: 10px;
   border-width: 0px;
   padding: 10px 16px;
-  background-color: rgb(255, 63, 108);
-  color: rgb(255, 255, 255);
+  background-color: skyblue;
+  color: black;
   cursor: pointer;
 }
 
 .bag-item-container {
   margin-bottom: 8px;
-  background: #fff;
+  background: linear-gradient(to right, #030a22, #246eb8);
   font-size: 14px;
   border: 1px solid #eaeaec;
   border-radius: 4px;
@@ -100,21 +101,26 @@
 .bag-item-img {
   width: 100%;
 }
+.company,.item-name{
+  color: antiquewhite;
+}
 
 .return-period {
   display: inline-flex;
   font-size: 14px;
   padding-top: 8px;
+  color: antiquewhite;
 }
 
 .return-period-days {
   font-weight: 700;
   margin-right: 4px;
+  color:antiquewhite;
 }
 
 .delivery-details {
   margin-top: 5px;
-  color: #282c3f;
+  color: antiquewhite;
   font-size: 12px;
   letter-spacing: -.1px;
   margin-bottom: 8px;
@@ -122,7 +128,7 @@
 }
 
 .delivery-details-days {
-  color: #03a685;
+  color: lightpink;
 }
 
 .remove-from-cart {
@@ -133,4 +139,94 @@
   width: 14px;
   height: 14px;
   cursor: pointer;
+  color: aliceblue;
+}
+
+
+/*************** RESPONSIVE CSS ****************/
+
+/* Tablet */
+@media (max-width: 1024px) {
+
+  .bag-page {
+    width: 90%;
+    margin-left: 5%;
+  }
+
+  .bag-items-container {
+    width: 60%;
+  }
+
+  .bag-summary {
+    width: 40%;
+  }
+}
+
+
+/* Mobile */
+@media (max-width: 768px) {
+
+  .bag-page {
+    width: 95%;
+    margin-left: 2.5%;
+  }
+
+  .bag-items-container,
+  .bag-summary {
+    width: 100%;
+    display: block;
+    border-right: none;
+    padding: 0;
+  }
+
+  .bag-summary {
+    margin-top: 20px;
+  }
+
+  .bag-item-container {
+    padding: 10px;
+  }
+
+  .item-left-part {
+    position: static;
+    width: 100%;
+    height: auto;
+  }
+
+  .item-right-part {
+    margin-left: 0;
+    padding-left: 0;
+  }
+
+  .bag-item-img {
+    height: auto;
+  }
+
+  .remove-from-cart {
+    top: 5px;
+    right: 10px;
+    font-size: 20px;
+  }
+}
+
+
+/* Small Mobile */
+@media (max-width: 480px) {
+
+  .price-item {
+    font-size: 13px;
+  }
+
+  .price-footer {
+    font-size: 14px;
+  }
+
+  .btn-place-order {
+    font-size: 13px;
+    padding: 8px;
+  }
+
+  .delivery-details {
+    font-size: 11px;
+  }
 }

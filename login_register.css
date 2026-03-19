@@ -1,88 +1,217 @@
-/* 
-body{    font-family: Figtree-Regular, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: radial-gradient(circle, #2b0a5c, #0a0225);
+  font-family: Arial, sans-serif;
+  color: white;
   
-    color: #424553;
-
-
-} */
-
-    main{
-    display: flex;
-    justify-content:center;
-    align-items: center;
-    background:#fdebe7;
-    height: 100vh;
-    
-
-
 }
-.login-box{
-    display: grid;
-    border: 1px solid black;
-    height: 60vh;
-    border-radius:3px ;
-    padding: 36px 36px 0;
-    width: 400px;
-    background: white
-    
-}
-.login{
-    margin-bottom: 24px;
-    font-family: Figtree-Regular;
-    font-size: 30px;
-    font-weight: 700;
-
-}
-.x{
-    font-size: 20px;
-    font-weight: 400;
-    color: #535766;
-
-}
-.userdetail{
-    display: flex;
-    flex-wrap: wrap;
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.pass,.email {
-  width: 90%;
+.welcom {
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 45px;
+  text-align: center;
+  letter-spacing: 2px;
+
+  color: white;
+
+  
+  text-shadow: 0 0 10px rgba(0,255,255,0.7),
+               0 0 20px rgba(138,43,226,0.6);
+
+
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 3px solid white;
+  width: 0;
+
+  animation: typing 3s steps(22) forwards,
+             blink 1s infinite;
+}
+
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+
+
+.login-box {
+  width: 350px;
+  padding: 40px 30px;
+  border-radius: 30px;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(15px);
+  border: 2px solid rgba(0,255,255,0.4);
+  box-shadow: 0 0 30px rgba(138,43,226,0.6),
+              inset 0 0 20px rgba(255,255,255,0.1);
+  position: relative;
+}
+
+.top-icon {
+  position: absolute;
+  top: -25px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #111;
   padding: 10px;
+  border-radius: 50%;
+  box-shadow: 0 0 15px rgb(162, 200, 200);
+  font-size: 20px;
+}
+
+.input-box {
+  display: flex;
+  align-items: center;
+  background: rgba(255,255,255,0.2);
+  border-radius: 20px;
+  margin: 15px 0;
+  padding: 10px;
+}
+
+.input-box :hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 30px rgb(140, 140, 219);
+}
+
+.input-box span {
+  margin-right: 10px;
+}
+
+.input-box input {
+  border: none;
+  outline: none;
+  background: transparent;
+  color: white;
+  width: 100%;
+}
+
+.options {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
   margin: 10px 0;
 }
 
-
-
-.consentbox{
-    margin: 5px 5px;
-    display: flex;
-
-}
-.privacy{
-    padding-left: 12px;
-    color: rgba(40, 44, 63, .8);
-    font-size: 14px;
-    font-weight: 400px;
+.options a {
+  color: #ccc;
+  text-decoration: none;
 }
 
-.btn{
-    width:100%;
-    padding:12px;
-    margin-top:20px;
-    background:#ff3f6c;
-    color:white;
-    border:none;
-    font-weight:bold;
-    margin-bottom: 10px;
-    cursor: 'pointer';
+button {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 25px;
+  background: linear-gradient(90deg, #00c6ff, #8a2be2);
+  color: white;
+  font-weight: bold;
+  margin-top: 15px;
+  cursor: pointer;
+  box-shadow: 0 0 20px rgba(0,255,255,0.5);
+  transition: 0.3s;
+}
 
+button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 30px rgba(0,255,255,0.9);
 }
-.help{
-    margin-bottom: 5px;
-}
-.signup{
-    margin-bottom: 20px;
+
+.signup_op{
     font-size: 15px;
-    font-weight:400
-
+    margin: 20px 0;
+    text-align: right;
 }
 
+.signup_op a{
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+.welcome{
+     align-items:center;
+}
+
+
+/*************** RESPONSIVE CSS ****************/
+
+/* Tablet */
+@media (max-width: 1024px) {
+
+  .login-box {
+    width: 320px;
+    padding: 30px 25px;
+  }
+}
+
+
+/* Mobile */
+@media (max-width: 768px) {
+
+  body {
+    height: 100vh;
+    padding: 10px;
+  }
+  .container{
+    margin: 0 auto;
+  }
+
+  .login-box {
+    width: 100%;
+    max-width: 350px;
+    padding: 25px 20px;
+    border-radius: 20px;
+  }
+
+  .top-icon {
+    top: -20px;
+    font-size: 16px;
+  }
+
+  .input-box {
+    padding: 8px;
+  }
+
+  .options {
+    flex-direction: column;
+    gap: 5px;
+    align-items: flex-start;
+  }
+
+  button {
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  .signup_op {
+    font-size: 13px;
+    text-align: center;
+  }
+}
+
+
+/* Small Mobile */
+@media (max-width: 480px) {
+
+  .login-box {
+    padding: 20px 15px;
+  }
+
+  .input-box input {
+    font-size: 12px;
+  }
+
+  .options {
+    font-size: 11px;
+  }
+}

@@ -1,46 +1,54 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-  
-    <link rel="stylesheet" href="login_register.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="login_register.css">
 </head>
+
 <body>
-    <main>
-        <div class="login-box">
-                <div class="login">Login <span class="x">or</span> Signup</div>
-                <div class="userdetail">
-                    
-                    
-                    <input type="email" class="email" required placeholder="Enter Email">
-                    <input type="password" required placeholder="Enter Password" class="pass">
-                    
 
-                </div>
-                <div class="consentbox">
-                <input type="checkbox" required class="consent"> 
-                <div class="privacy">
-                By continuing, I agree to the Terms of use & privacy policy and I am above 18 years old.
-
-                </div>
-                </div>
-                <div >
-                <button class="btn" onclick="loginUser()">CONTINUE</button>
-                </div>
-                <P class="help"> Have trouble login in? Get help</P>
-                <a href="signup.html" class="signup">Sign Up</a>
-                
-        </div>
-
-
-        
-    </main>
+<div class="container">
+  <div class="welcom">
+    Welcome To BuyBee 🐝 
+  </div>
+  
+  <div class="login-box">
     
-    <script src="login_register.js"></script>
+    <div class="top-icon"> LOGIN
+      🔒
+    </div>
+
+    <div class="input-box">
+      
+      <span >👤</span>
+      <input type="email" placeholder="Enter Email" class="email">
+    </div>
+
+    <div class="input-box">
+      <span>🔒</span>
+      <input type="password" placeholder="Password" class="pass">
+    </div>
+
+    <div class="option">
+      <label><input type="checkbox" class="consent"> By clicking i accept the terms and conditions</label>
+     
+    </div>
+
+    <button onclick="loginUser()">Sign In</button>
+
+    
+
+  
+  <div class="signup_op">
+    
+    <a href="signup.html" >Sign Up</a>
+
+  </div>
+
+</div>
+<script src="login_register.js"></script>
+
 </body>
 </html>
-

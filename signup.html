@@ -1,47 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Signup</title>
-  <link rel="stylesheet" href="style.css">
-  <style>
-    body {
-  font-family: Arial;
-  background:#fdebe7 ;
-}
-
-.container {
-  width: 300px;
-  margin: 100px auto;
-  padding: 20px;
-  background: white;
-  text-align: center;
-  border-radius: 10px;
-}
-
-input {
-  width: 90%;
-  padding: 10px;
-  margin: 10px 0;
-}
-
-button {
-  padding: 10px;
-  width: 100%;
-  background:#ff3f6c;
-  color: white;
-  border: none;
-  cursor: pointer;
-}
-
-button:hover {
-  background: darkblue;
-}
-  </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="signup.css">
 </head>
 <body>
 
 <div class="container">
-  <h2>Signup</h2>
+  <h2 class="top-icon">Sign Up ✍️</h2>
+
   
   <input type="text" id="name" placeholder="Enter Name">
   <input type="tel" id="name" placeholder="Enter Phone Number">
@@ -50,7 +19,7 @@ button:hover {
   
   <button onclick="signupUser()">Sign Up</button>
 
-  <p>Already have account? <a href="index.html">Login</a></p>
+  <p>Already have account? <a href="index.html" style="color: white;">Login</a></p>
 </div>
 
 <script src="signup.js"></script>

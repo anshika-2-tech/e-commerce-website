@@ -34,7 +34,7 @@ function displayProductDetail(){
 
     <div class="product-detail-container">
 
-        <div class="product-company" style="font-size:35px">
+        <div class="product-company" style="font-size:35px;color:white;">
             ${item.company}
         </div>
 
@@ -49,16 +49,16 @@ function displayProductDetail(){
         <hr>
 
         <div class="price" style="margin-top:20px;">
-            <span style="font-size:22px;">₹ ${item.current_price}</span>
-            <span style="color:#7e818c;font-size:18px;">MRP</span>
-            <span style="text-decoration:line-through;">₹ ${item.original_price}</span>
-            <span style="color:#ff3f6c;">(${item.discount_percentage}% OFF)</span>
+            <span style="font-size:22px;color:white">₹ ${item.current_price}</span>
+            <span style="color:white;font-size:18px;">MRP</span>
+            <span style="text-decoration:line-through; color:white;">₹ ${item.original_price}</span>
+            <span style="color:pink;">(${item.discount_percentage}% OFF)</span>
         </div>
 
         <div class="detail">inclusive of all taxes</div>
 
         <div class="product-size">
-            <div style="font-size:19px; margin-top:15px;">SELECT SIZE</div>
+            <div style="font-size:19px; margin-top:15px; color:white;">SELECT SIZE</div>
 
             <button class="size-btn" onclick="selectSize(this)">XS</button>
             <button class="size-btn" onclick="selectSize(this)">S</button>
@@ -89,11 +89,11 @@ function displayProductDetail(){
                 <button>Check</button>
             </div>
 
-            <p style="font-size:13px;margin-top:10px;">
+            <p style="font-size:13px;margin-top:10px;color:white;">
                 Please enter PIN code to check delivery time & Pay on Delivery Availability
             </p>
 
-            <p style="line-height:25px;">
+            <p style="line-height:25px; color:white;">
                 100% Original Products<br>
                 Pay on delivery might be available<br>
                 Easy 14 days returns and exchanges
@@ -116,7 +116,7 @@ function displayProductDetail(){
             <p>Cotton Machine Wash</p>
 
             <p>Product Code: <b>34725276</b></p>
-            <p>Seller: <b style="color:#6b2430">H & M</b></p>
+            <p>Seller: <b style="color:lightpink;">H & M</b></p>
 
         </div>
 
