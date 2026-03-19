@@ -155,9 +155,7 @@
 }
 
 
-/*************** RESPONSIVE CSS ****************/
 
-/* Tablet */
 @media (max-width: 1024px) {
 
   .product-image {
@@ -174,11 +172,11 @@
 }
 
 
-/* Mobile */
+
 @media (max-width: 768px) {
 
   .product-details {
-    flex-direction: column;   /* MOST IMPORTANT 🔥 */
+    flex-direction: column;   
   }
 
   .product-image,
@@ -212,7 +210,6 @@
 }
 
 
-/* Small Mobile */
 @media (max-width: 480px) {
 
   .product-details {
