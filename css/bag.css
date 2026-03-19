@@ -143,9 +143,7 @@
 }
 
 
-/*************** RESPONSIVE CSS ****************/
 
-/* Tablet */
 @media (max-width: 1024px) {
 
   .bag-page {
@@ -163,7 +161,7 @@
 }
 
 
-/* Mobile */
+
 @media (max-width: 768px) {
 
   .bag-page {
@@ -210,7 +208,7 @@
 }
 
 
-/* Small Mobile */
+
 @media (max-width: 480px) {
 
   .price-item {
