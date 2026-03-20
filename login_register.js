@@ -13,7 +13,7 @@ function loginUser() {
 
   if (storedUser) {
     if (email === storedUser.email && password === storedUser.password) {
-      alert("Login Successful!");
+      
       window.location.href = "dashboard.html";
     } else {
       alert("Wrong Email or Password");
