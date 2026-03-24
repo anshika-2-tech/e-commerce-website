@@ -319,6 +319,9 @@ a.action_container:link {
     margin: 15px;
     z-index: 1000;
 }
+.filter_container button{
+    padding: 5px 15px ; border: 2px solid black; border-radius: 10px; font-weight: 600;cursor: pointer;
+}
 
 .dropdown {
     display: none;
@@ -398,6 +401,45 @@ a.action_container:link {
     .item-img {
         height: auto;
     }
+    .filter_container button {
+         padding: 0 4px;
+         border: 1px solid black;
+}
+       
+    .footer_column h3 {
+    color: #e4e7f5;
+    font-size: 15px;
+    margin-bottom: 25px;
+    margin-left: 10px;
+    
+}
+
+.footer_column a {
+    color: #b4bae0;
+    font-size: 13px;
+    text-decoration: none;
+    padding-bottom: 5px;
+    padding-left: 10px;
+}
+.social_icon img{
+    height: 20px;
+    cursor: pointer;
+}
+
+.social_heading{
+    font-size: 13px;
+    font-weight: 600;
+    margin-top: 20px;
+    color: white;
+    padding-left: 10px;
+}
+
+
+.app_icon{
+    height: 26px;
+    cursor: pointer;
+}
+  
 }
 
 
@@ -414,5 +456,41 @@ a.action_container:link {
 
     .item-name {
         font-size: 12px;
+
     }
+    .footer_column h3 {
+    color: #e4e7f5;
+    font-size: 10px;
+    margin-bottom: 25px;
+    margin-left: 10px;
+    
 }
+
+.footer_column a {
+    color: #b4bae0;
+    font-size: 10px;
+    text-decoration: none;
+    padding-bottom: 5px;
+    padding-left: 10px;
+}
+.social_icon img{
+    height: 17px;
+    cursor: pointer;
+}
+
+.social_heading{
+    font-size: 13px;
+    font-weight: 600;
+    margin-top: 20px;
+    color: white;
+    padding-left: 10px;
+}
+
+
+.app_icon{
+    height: 24px;
+    cursor: pointer;
+}
+
+}
+
