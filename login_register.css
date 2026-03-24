@@ -34,14 +34,17 @@ body {
   border-right: 3px solid white;
   width: 0;
 
-  animation: typing 3s steps(22) forwards,
-             blink 1s infinite;
+  animation: typing 8s steps(18) infinite alternate,
+             blink 2s step-end ;
 }
 
 
 @keyframes typing {
-  from { width: 0 }
-  to { width: 100% }
+  0% { width: 0 }
+  50% { width: 95% }
+  70%{width: 95%}
+  100%{width:0}
+
 }
 
 
@@ -163,13 +166,15 @@ button:hover {
   }
   .container{
     margin: 0 auto;
+  
   }
 
   .login-box {
-    width: 100%;
+    width: 70%;
     max-width: 350px;
     padding: 25px 20px;
     border-radius: 20px;
+    height:50%;
   }
 
   .top-icon {
@@ -196,14 +201,18 @@ button:hover {
     font-size: 13px;
     text-align: center;
   }
+  .welcom{
+   
+    font-size: 22px;
+    
+  }
 }
-
-
 
 @media (max-width: 480px) {
 
   .login-box {
     padding: 20px 15px;
+    width: 70%;
   }
 
   .input-box input {
@@ -212,5 +221,9 @@ button:hover {
 
   .options {
     font-size: 11px;
+
+  }
+  .welcom{
+    font-size: 19px;
   }
 }
